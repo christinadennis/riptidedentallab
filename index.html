@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif; color:darkblue}
+body {font-size:16px}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
@@ -16,7 +16,7 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-darkblue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>RIPTIDE DENTAL LAB</b></h3>
@@ -31,8 +31,8 @@ body {font-size:16px;}
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-darkblue w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-darkblue w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
   <span>RIPETIDE DENTAL LAB</span>
 </header>
 
@@ -44,14 +44,18 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>RIPTIDE DENTAL LAB</b></h1>
-    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Showcase</b></h1>
-    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <h1 class="w3-xxxlarge; w3-center"><b>RIPTIDE DENTAL LAB</b></h1>
+    <div class="w3-container; w3-center">
+        <img src="./riptide_logo.jpg" style="width:50%" onclick="onClick(this)" alt="logo">
+    </div>
+    <h2 class="w3-xxlarge w3-text-blue"><b>Showcase</b></h2>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
   </div>
   
   <!-- Photo grid (modal) -->
-  <!-- <div class="w3-row-padding">
-    <div class="w3-half">
+  <div class="w3-container; w3-center">
+    <img src="./riptide_labslip.jpg" style="width:50%" onclick="onClick(this)" alt="labslip">
+    <!--<div class="w3-half">
       <img src="./images/teeth.jpg" style="width:100%" onclick="onClick(this)" alt="teeth">
       <img src="./images/teeth.jpg" style="width:100%" onclick="onClick(this)" alt="teeth">
       <img src="./images/teeth.jpg" style="width:100%" onclick="onClick(this)" alt="teeth">
@@ -61,9 +65,9 @@ body {font-size:16px;}
       <img src="./images/teeth.jpg" style="width:100%" onclick="onClick(this)" alt="teeth">
       <img src="./images/teeth.jpg" style="width:100%" onclick="onClick(this)" alt="teeth">
       <img src="./images/teeth.jpg" style="width:100%" onclick="onClick(this)" alt="teeth">
-    </div>
+    </div>-->
   </div>
-  -->
+  
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -76,8 +80,8 @@ body {font-size:16px;}
 
   <!-- Mission Statement -->
   <div class="w3-container" id="mission" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Riptide Dental Lab Mission Statement</b></h1>
-    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Riptide Dental Lab Mission Statement</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p><b>Great work. Good people. No unnecessary
 complications</b></p>
     <p>At Riptide Dental Lab, our mission is to deliver exceptional dental restorations backed by decades of experience, meticulous craftsmanship, and a commitment to doing things right. As a full-service lab, we're here to be a trusted partner for every case, combining proven expertise with modern technology, clear communication, and dependable service.</p>
@@ -88,8 +92,8 @@ actually enjoy working with.</p>
   
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Technicians</b></h1>
-    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Technicians</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p>The best team in the world.</p>
     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -134,8 +138,8 @@ actually enjoy working with.</p>
 
   <!-- Packages / Pricing Tables -->
   <!--<div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Packages.</b></h1>
-    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
   </div>
 
@@ -160,7 +164,7 @@ actually enjoy working with.</p>
         
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-darkblue w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-blue w3-xlarge w3-padding-32">Pro</li>
         <li class="w3-padding-16">Floorplanning</li>
         <li class="w3-padding-16">50 hours support</li>
         <li class="w3-padding-16">Photography</li>
@@ -171,7 +175,7 @@ actually enjoy working with.</p>
           <span class="w3-opacity">per room</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-darkblue w3-padding-large w3-hover-black">Sign Up</button>
+          <button class="w3-button w3-blue w3-padding-large w3-hover-black">Sign Up</button>
         </li>
       </ul>
     </div>
@@ -179,15 +183,15 @@ actually enjoy working with.</p>
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Contact</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
       <p class="w3-large">Let's get in touch:</p>
         <div style="margin-top:48px">
-      <p>Phone: (760) 522-7776</p>
+      <p><a href="callto:7605227776">(760) 522-7776</a></p>
       <p><a href="mailto:info@riptidedentallab.com">info@riptidedentallab.com</a></p>
       <p>925 E. PENNSYLVANIA AVE. SUITE I</p>
       <p>ESCONDIDO, CA 92025</p>
     <br>
-    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
     <!--<p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
@@ -202,7 +206,7 @@ actually enjoy working with.</p>
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-darkblue w3-margin-bottom">Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
     </form>  
   </div>-->
 
